@@ -23,7 +23,9 @@
 }
 
 body {
-    background: url(/images/bg-mobile.png) no-repeat top center;
+    background-image: url(/images/bg-mobile.png);
+    background-position: top center;
+    background-repeat: no-repeat;
     background-color: var(--Violet);
     color: var(--white);
     font-size: medium;
@@ -35,7 +37,16 @@ header {
     margin: 30px;
 }
 
+#logo {
+    margin-bottom: 50px;
+}
+
+#mockups {
+    padding-left: 45px;
+}
+
 main {
+    line-height: 30px;
     margin-top: 50px;
 }
 
@@ -83,3 +94,50 @@ footer {
     background-color: var(--Soft-Magenta);
     transition: .5s;
 }
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-position: top center;
+
+
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-flow: column;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: baseline;
+    }
+    
+    #mockups {
+        margin-top: 60px;
+        height: 500px;
+        width: 700px;
+    }
+
+    footer {
+        margin-top: 100px;
+
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+}
+
+    
