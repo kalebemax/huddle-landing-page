@@ -123,6 +123,17 @@ footer {
         align-items: baseline;
     }
 
+    h1 {
+        font-size: xx-large;
+        line-height: 40px;
+        margin-top: 150px;
+        padding-right: 100px;
+    }
+
+    p {
+        padding-right: 100px;
+    }
+
     #logo {
         width: 155px;
     }
@@ -144,10 +155,6 @@ footer {
 
         display: flex;
         flex-direction: row-reverse;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: flex-start;
-        align-items: center;
     }
 
 }
